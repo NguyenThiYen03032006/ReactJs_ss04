@@ -9,8 +9,8 @@ function processInput(input : string| number|boolean): string| number{
                 let c=val.charCodeAt(0);
                 return (c >= 65 && c <= 90) || (c >= 97 && c <= 122)
             })
-            let str2=str.join('')
-            return str2
+            let num=str.length
+            return `${num} ky tu chu cai`
         }
     }else if(typeof input==='number'){
         // ktra so nt
@@ -35,6 +35,6 @@ function processInput(input : string| number|boolean): string| number{
         return 'Input khong hop le'
     }
 }
-console.log(processInput('123'))
+console.log(processInput('abc123'))
 console.log(processInput(13))
 console.log(processInput(true))
